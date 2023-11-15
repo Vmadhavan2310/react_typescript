@@ -1,5 +1,6 @@
 import { AdvancedProps } from './Components/AdvancedProps';
 import { ChildrenProps } from './Components/ChildrenProps';
+import { EventProps } from './Components/EventProps';
 import TypingArr from './Components/TypingArr';
 import TypingObject from './Components/TypingObject';
 import Typingprops from './Components/TypingProps';
@@ -26,7 +27,7 @@ function App() {
   ]
   return (
     <div className="App">
-     <Typingprops name='vinoths' age={25} alive={false}/>
+    {/*  <Typingprops name='vinoths' age={25} alive={false}/>
      <TypingObject person={person} nickName="batman"/>
      <TypingArr personArr={personArr}/>
      <AdvancedProps status='success'>
@@ -34,7 +35,8 @@ function App() {
       <ChildrenProps>
       success
         </ChildrenProps>
-     </AdvancedProps>
+     </AdvancedProps> */}
+     <EventProps input={(e)=>{console.log(e.target.value)}} clickmsg={(e,id)=>console.log("clicked",id)}/>
     </div>
   );
 }
