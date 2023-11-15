@@ -1,3 +1,5 @@
+import { AdvancedProps } from './Components/AdvancedProps';
+import { ChildrenProps } from './Components/ChildrenProps';
 import TypingArr from './Components/TypingArr';
 import TypingObject from './Components/TypingObject';
 import Typingprops from './Components/TypingProps';
@@ -27,6 +29,12 @@ function App() {
      <Typingprops name='vinoths' age={25} alive={false}/>
      <TypingObject person={person} nickName="batman"/>
      <TypingArr personArr={personArr}/>
+     <AdvancedProps status='success'>
+      This is Advanced props children
+      <ChildrenProps>
+      success
+        </ChildrenProps>
+     </AdvancedProps>
     </div>
   );
 }
