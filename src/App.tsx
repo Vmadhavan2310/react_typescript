@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TypingArr from './Components/TypingArr';
+import TypingObject from './Components/TypingObject';
+import Typingprops from './Components/TypingProps';
 
 function App() {
+  const person={
+    firstName:"Bruce",
+    lastName:"Wayne"
+  }
+
+  const personArr=[
+    {
+      name:"vinoth",
+      age:28
+    },
+    {
+      name:"madhavan",
+      age:27
+    },
+    {
+      name:"Yash",
+      age:24
+    }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Typingprops name='vinoths' age={25} alive={false}/>
+     <TypingObject person={person} nickName="batman"/>
+     <TypingArr personArr={personArr}/>
     </div>
   );
 }
