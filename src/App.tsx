@@ -1,6 +1,8 @@
 import { AdvancedProps } from './Components/AdvancedProps';
 import { ChildrenProps } from './Components/ChildrenProps';
 import { EventProps } from './Components/EventProps';
+import ReducerType from './Components/ReducerType';
+import { StateHook } from './Components/StateHook';
 import TypingArr from './Components/TypingArr';
 import TypingObject from './Components/TypingObject';
 import Typingprops from './Components/TypingProps';
@@ -36,7 +38,9 @@ function App() {
       success
         </ChildrenProps>
      </AdvancedProps> */}
-     <EventProps input={(e)=>{console.log(e.target.value)}} clickmsg={(e,id)=>console.log("clicked",id)}/>
+     {/* <EventProps input={(e)=>{console.log(e.target.value)}} clickmsg={(e,id)=>console.log("clicked",id)}/> */}
+     {/* <StateHook/> */}
+     <ReducerType/>
     </div>
   );
 }
