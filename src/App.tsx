@@ -6,7 +6,10 @@ import { StateHook } from './Components/StateHook';
 import TypingArr from './Components/TypingArr';
 import TypingObject from './Components/TypingObject';
 import Typingprops from './Components/TypingProps';
-
+import ThemeProvider from './Components/UseContext/ThemeProvider';
+import Box from './Components/UseContext/Box';
+import { themeObj } from './Components/UseContext/ThemeProvider';
+import { theme } from './Components/UseContext/theme';
 function App() {
   const person={
     firstName:"Bruce",
@@ -40,8 +43,11 @@ function App() {
      </AdvancedProps> */}
      {/* <EventProps input={(e)=>{console.log(e.target.value)}} clickmsg={(e,id)=>console.log("clicked",id)}/> */}
      {/* <StateHook/> */}
-     <ReducerType/>
-    </div>
+     {/* <ReducerType/> */}
+     <themeObj.Provider value={theme}>
+      <Box/>
+     </themeObj.Provider>
+     </div>
   );
 }
 

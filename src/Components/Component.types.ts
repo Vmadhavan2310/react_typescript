@@ -34,3 +34,8 @@ export type EmpAction={
     status:string
     }
 }
+
+//Use context hook
+export type childrenProp={
+    children:React.ReactNode
+}
