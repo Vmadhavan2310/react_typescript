@@ -57,3 +57,11 @@ export type ProfileProps={
 export type privateCompstateType={
     names:string
 }
+
+//Template literal
+type horizntal="top"|"bottom"|"center"
+type vertical="start"|"end"|"middle"
+
+export type positionProps={
+  position:Exclude<`${horizntal}-${vertical}` | `${vertical}-${horizntal}`,'center-middle'>|'center'
+}

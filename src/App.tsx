@@ -12,6 +12,7 @@ import { themeObj } from './Components/UseContext/ThemeProvider';
 import { theme } from './Components/UseContext/theme';
 import ClassComp from './Components/ClassComp';
 import LoginComp from './Components/Component Props/LoginComp';
+import TemplateLiteral from './Components/TemplateLiteral';
 function App() {
   const person={
     firstName:"Bruce",
@@ -50,7 +51,8 @@ function App() {
         <Box/>
       </ThemeProvider> */}
       {/* <ClassComp age={25}/> */}
-      <LoginComp/>
+      {/* <LoginComp/> */}
+      <TemplateLiteral position='center'/>
    
      </div>
   );
