@@ -1,3 +1,22 @@
+//Course summary
+/* 
+Basic and Advanced props 
+Events & styles
+UseState
+usereduecer
+use context API
+use Ref
+class Components
+Component as props
+Generics
+Restricting props
+Template litrals & Exclude
+wrapping HTML & Omit
+Extracting component prop types
+polymorphic components
+*/
+
+
 import React from "react";
 
 export type inputProps={
@@ -65,3 +84,9 @@ type vertical="start"|"end"|"middle"
 export type positionProps={
   position:Exclude<`${horizntal}-${vertical}` | `${vertical}-${horizntal}`,'center-middle'>|'center'
 }
+
+/* 
+Note: If you want to extract the types from component use the below method inside the target component
+React.ComponentProps<typeof {componentName}>
+
+*/
