@@ -39,3 +39,21 @@ export type EmpAction={
 export type childrenProp={
     children:React.ReactNode
 }
+
+//class component state and props
+export type stateTypes={
+    name:string
+}
+
+export type propTypes={
+    age:number
+}
+
+//Component Props
+export type ProfileProps={
+    isloggedIn:boolean
+    comp:React.ComponentType
+}
+export type privateCompstateType={
+    names:string
+}

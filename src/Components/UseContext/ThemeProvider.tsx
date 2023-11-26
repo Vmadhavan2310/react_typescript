@@ -4,9 +4,9 @@ import { childrenProp } from '../Component.types'
 
 export const themeObj=React.createContext(theme)
 
-function ThemeProvider({children:childrenProp}) {
+function ThemeProvider({children}:childrenProp) {
   return (
-    <div><children/></div>
+    <themeObj.Provider value={theme}>{children}</themeObj.Provider>
   )
 }
 

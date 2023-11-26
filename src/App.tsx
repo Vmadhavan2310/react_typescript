@@ -10,6 +10,8 @@ import ThemeProvider from './Components/UseContext/ThemeProvider';
 import Box from './Components/UseContext/Box';
 import { themeObj } from './Components/UseContext/ThemeProvider';
 import { theme } from './Components/UseContext/theme';
+import ClassComp from './Components/ClassComp';
+import LoginComp from './Components/Component Props/LoginComp';
 function App() {
   const person={
     firstName:"Bruce",
@@ -44,9 +46,12 @@ function App() {
      {/* <EventProps input={(e)=>{console.log(e.target.value)}} clickmsg={(e,id)=>console.log("clicked",id)}/> */}
      {/* <StateHook/> */}
      {/* <ReducerType/> */}
-     <themeObj.Provider value={theme}>
-      <Box/>
-     </themeObj.Provider>
+      {/* <ThemeProvider>
+        <Box/>
+      </ThemeProvider> */}
+      {/* <ClassComp age={25}/> */}
+      <LoginComp/>
+   
      </div>
   );
 }
