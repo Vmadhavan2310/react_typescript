@@ -21,6 +21,7 @@ import GenericTypeProps from './Components/New Notes/GenericTypeProps';
 import HookProps from './Components/New Notes/HookProps';
 import NewReducerHook from './Components/New Notes/NewReducerHook';
 import FormComp from './Components/New Notes/FormComp';
+import ParentComp from './Components/New Notes/UseCallback/ParentComp';
 function App() {
   const person={
     firstName:"Bruce",
@@ -71,7 +72,8 @@ function App() {
       {/* <GenericTypeProps person={personArr}/> */}
       {/* <HookProps/> */}
       {/* <NewReducerHook/> */}
-      <FormComp/>
+      {/* <FormComp/> */}
+      <ParentComp/>
      </div>
   );
 }
