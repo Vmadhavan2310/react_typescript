@@ -2,7 +2,7 @@ import React from 'react'
 
 function FuncChildComp() {
   return (
-    <div>Its child component for functional</div>
+    <div>Its child component for functionals</div>
   )
 }
 

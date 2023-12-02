@@ -16,6 +16,7 @@ import TemplateLiteral from './Components/TemplateLiteral';
 import { FunctionalComp } from './Components/New Notes/FunctionalComp';
 import ClassComps from './Components/New Notes/ClassComps';
 import FuncChildComp from './Components/New Notes/FuncChildComp';
+import TestComp from './Components/New Notes/TestComp';
 function App() {
   const person={
     firstName:"Bruce",
@@ -56,8 +57,8 @@ function App() {
       {/* <ClassComp age={25}/> */}
       {/* <LoginComp/> */}
       {/* <TemplateLiteral position='center'/> */}
-      <FunctionalComp person={{name:"vinoth",age:28}}>
-        <FuncChildComp/>
+      <FunctionalComp person={{name:"vinoth",age:28}} styling={{"color":"yellow","backgroundColor":"orange"}}>
+        <TestComp/>
       </FunctionalComp>
       {/* <ClassComps batman={person}/> */}
      </div>
