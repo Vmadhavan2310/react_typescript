@@ -1,9 +1,10 @@
 import React from 'react'
 
-function TestComp() {
+function TestComp(props:{child:string}) {
   return (
-    <div>TestComp</div>
+    <div>TestComp{props.child}</div>
   )
 }
+TestComp.defaultProps ={child:"not working"}
 
 export default TestComp
