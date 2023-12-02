@@ -3,7 +3,7 @@ type functionalProps={
     name:string
     age:number
    }
-   children:React.JSX.Element
+   children:React.ReactElement
    /* It supports React.ReactNode | React.JSX.Element | React.ReactElement */
 }
 

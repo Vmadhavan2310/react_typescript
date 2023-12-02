@@ -15,6 +15,7 @@ import LoginComp from './Components/Component Props/LoginComp';
 import TemplateLiteral from './Components/TemplateLiteral';
 import { FunctionalComp } from './Components/New Notes/FunctionalComp';
 import ClassComps from './Components/New Notes/ClassComps';
+import FuncChildComp from './Components/New Notes/FuncChildComp';
 function App() {
   const person={
     firstName:"Bruce",
@@ -56,7 +57,7 @@ function App() {
       {/* <LoginComp/> */}
       {/* <TemplateLiteral position='center'/> */}
       <FunctionalComp person={{name:"vinoth",age:28}}>
-        <div>Its child component for functional Compss</div>
+        <FuncChildComp/>
       </FunctionalComp>
       {/* <ClassComps batman={person}/> */}
      </div>
