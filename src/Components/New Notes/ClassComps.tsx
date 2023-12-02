@@ -18,6 +18,9 @@ type classtypeState={
         }
     }
 
+    static getDerivedStateFromProps(props:classtypeProps){
+        return {name:props.batman.firstName}
+    }
 
     render(){
         return(
