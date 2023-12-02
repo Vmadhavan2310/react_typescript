@@ -14,6 +14,7 @@ import ClassComp from './Components/ClassComp';
 import LoginComp from './Components/Component Props/LoginComp';
 import TemplateLiteral from './Components/TemplateLiteral';
 import { FunctionalComp } from './Components/New Notes/FunctionalComp';
+import ClassComps from './Components/New Notes/ClassComps';
 function App() {
   const person={
     firstName:"Bruce",
@@ -55,9 +56,9 @@ function App() {
       {/* <LoginComp/> */}
       {/* <TemplateLiteral position='center'/> */}
       <FunctionalComp person={{name:"vinoth",age:28}}/>
-   
+      <ClassComps batman={person}/>
      </div>
   );
 }
-
+ 
 export default App;
