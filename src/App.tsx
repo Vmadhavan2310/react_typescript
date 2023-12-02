@@ -18,6 +18,9 @@ import ClassComps from './Components/New Notes/ClassComps';
 import FuncChildComp from './Components/New Notes/FuncChildComp';
 import TestComp from './Components/New Notes/TestComp';
 import GenericTypeProps from './Components/New Notes/GenericTypeProps';
+import HookProps from './Components/New Notes/HookProps';
+import NewReducerHook from './Components/New Notes/NewReducerHook';
+import FormComp from './Components/New Notes/FormComp';
 function App() {
   const person={
     firstName:"Bruce",
@@ -26,14 +29,17 @@ function App() {
 
   const personArr=[
     {
+      id:1,
       name:"vinoth",
       age:28
     },
     {
+      id:2,
       name:"madhavan",
       age:27
     },
     {
+      id:3,
       name:"Yash",
       age:24
     }
@@ -62,7 +68,10 @@ function App() {
         <TestComp/>
       </FunctionalComp> */}
       {/* <ClassComps batman={person}/> */}
-      <GenericTypeProps name='vinoth' age={30}/>
+      {/* <GenericTypeProps person={personArr}/> */}
+      {/* <HookProps/> */}
+      {/* <NewReducerHook/> */}
+      <FormComp/>
      </div>
   );
 }
