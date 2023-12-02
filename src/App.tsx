@@ -55,8 +55,10 @@ function App() {
       {/* <ClassComp age={25}/> */}
       {/* <LoginComp/> */}
       {/* <TemplateLiteral position='center'/> */}
-      <FunctionalComp person={{name:"vinoth",age:28}}/>
-      <ClassComps batman={person}/>
+      <FunctionalComp person={{name:"vinoth",age:28}}>
+        <div>Its child component for functional Compss</div>
+      </FunctionalComp>
+      {/* <ClassComps batman={person}/> */}
      </div>
   );
 }
