@@ -13,6 +13,7 @@ import { theme } from './Components/UseContext/theme';
 import ClassComp from './Components/ClassComp';
 import LoginComp from './Components/Component Props/LoginComp';
 import TemplateLiteral from './Components/TemplateLiteral';
+import { FunctionalComp } from './Components/New Notes/FunctionalComp';
 function App() {
   const person={
     firstName:"Bruce",
@@ -52,7 +53,8 @@ function App() {
       </ThemeProvider> */}
       {/* <ClassComp age={25}/> */}
       {/* <LoginComp/> */}
-      <TemplateLiteral position='center'/>
+      {/* <TemplateLiteral position='center'/> */}
+      <FunctionalComp person={{name:"vinoth",age:28}}/>
    
      </div>
   );
