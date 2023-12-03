@@ -22,6 +22,9 @@ import HookProps from './Components/New Notes/HookProps';
 import NewReducerHook from './Components/New Notes/NewReducerHook';
 import FormComp from './Components/New Notes/FormComp';
 import ParentComp from './Components/New Notes/UseCallback/ParentComp';
+import PortalComp from './Components/New Notes/PortalComp';
+import CountOrigComp from './Components/New Notes/HOC/CountOrigComp';
+import TestCount from './Components/New Notes/HOC/TestCount';
 function App() {
   const person={
     firstName:"Bruce",
@@ -73,7 +76,10 @@ function App() {
       {/* <HookProps/> */}
       {/* <NewReducerHook/> */}
       {/* <FormComp/> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      {/* <PortalComp/> */}
+      <CountOrigComp/>
+      <TestCount/>
      </div>
   );
 }
