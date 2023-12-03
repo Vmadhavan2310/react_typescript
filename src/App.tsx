@@ -27,6 +27,8 @@ import CountOrigComp from './Components/New Notes/HOC/CountOrigComp';
 import TestCount from './Components/New Notes/HOC/TestCount';
 import RenderCountComp from './Components/New Notes/Render Props/RenderCountComp';
 import Render1 from './Components/New Notes/Render Props/Render1';
+import RenderCustom from './Components/New Notes/Custom hooks/RenderCustom';
+import RenderCustom2 from './Components/New Notes/Custom hooks/RenderCustom2';
 export type rendersCount={
 
       count:number
@@ -89,9 +91,11 @@ function App() {
       {/* <PortalComp/> */}
       {/* <CountOrigComp/>
       <TestCount/> */}
-      <RenderCountComp render={(renderCount:rendersCount,increaseRender:increaseRender)=>
+      {/* <RenderCountComp render={(renderCount:rendersCount,increaseRender:increaseRender)=>
         <Render1 renderCount={renderCount} increaseRender={increaseRender}/>
-      }/>
+      }/> */}
+      <RenderCustom/>
+      <RenderCustom2/>
      </div>
   );
 }
