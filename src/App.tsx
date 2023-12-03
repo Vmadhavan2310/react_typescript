@@ -25,6 +25,15 @@ import ParentComp from './Components/New Notes/UseCallback/ParentComp';
 import PortalComp from './Components/New Notes/PortalComp';
 import CountOrigComp from './Components/New Notes/HOC/CountOrigComp';
 import TestCount from './Components/New Notes/HOC/TestCount';
+import RenderCountComp from './Components/New Notes/Render Props/RenderCountComp';
+import Render1 from './Components/New Notes/Render Props/Render1';
+export type rendersCount={
+
+      count:number
+  
+}
+export type increaseRender=()=>void
+
 function App() {
   const person={
     firstName:"Bruce",
@@ -78,8 +87,11 @@ function App() {
       {/* <FormComp/> */}
       {/* <ParentComp/> */}
       {/* <PortalComp/> */}
-      <CountOrigComp/>
-      <TestCount/>
+      {/* <CountOrigComp/>
+      <TestCount/> */}
+      <RenderCountComp render={(renderCount:rendersCount,increaseRender:increaseRender)=>
+        <Render1 renderCount={renderCount} increaseRender={increaseRender}/>
+      }/>
      </div>
   );
 }
