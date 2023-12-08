@@ -32,6 +32,7 @@ import RenderCustom2 from './Components/New Notes/Custom hooks/RenderCustom2';
 import Render_useState from './Components/Rendering/Render_useState';
 import Render_useReducer from './Components/Rendering/Render_useReducer';
 import Render_stateObj from './Components/Rendering/Render_stateObj';
+import Render_parentComp from './Components/Rendering/Render_parentComp';
 export type rendersCount={
 
       count:number
@@ -101,7 +102,8 @@ function App() {
       <RenderCustom2/> */}
       {/* <Render_useState/> */}
       {/* <Render_useReducer/> */}
-      <Render_stateObj/>
+      {/* <Render_stateObj/> */}
+      <Render_parentComp/>
      </div>
   );
 }
