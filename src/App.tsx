@@ -29,6 +29,9 @@ import RenderCountComp from './Components/New Notes/Render Props/RenderCountComp
 import Render1 from './Components/New Notes/Render Props/Render1';
 import RenderCustom from './Components/New Notes/Custom hooks/RenderCustom';
 import RenderCustom2 from './Components/New Notes/Custom hooks/RenderCustom2';
+import Render_useState from './Components/Rendering/Render_useState';
+import Render_useReducer from './Components/Rendering/Render_useReducer';
+import Render_stateObj from './Components/Rendering/Render_stateObj';
 export type rendersCount={
 
       count:number
@@ -94,8 +97,11 @@ function App() {
       {/* <RenderCountComp render={(renderCount:rendersCount,increaseRender:increaseRender)=>
         <Render1 renderCount={renderCount} increaseRender={increaseRender}/>
       }/> */}
-      <RenderCustom/>
-      <RenderCustom2/>
+      {/* <RenderCustom/>
+      <RenderCustom2/> */}
+      {/* <Render_useState/> */}
+      {/* <Render_useReducer/> */}
+      <Render_stateObj/>
      </div>
   );
 }
