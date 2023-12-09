@@ -15,4 +15,6 @@ function Render_parentOne() {
   )
 }
 // React comp cannot mutate the props so when passing the element as children it falls under props so the props won't re-render. Incase of parent comp props changes then child also will re-render.
+//Note:- If the child comp has sub child comp use memo has no effect better to avoid it.
+//Note2: if the comp has object or functions if we are passing as props, use memo won't work due to no reference has been created for every time.
 export default Render_parentOne
