@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import Render_ChildOne from './Render_ChildOne';
-interface childOneProps{
-    children:React.ReactNode
-}
-function Render_parentOne({children}:childOneProps) {
+
+function Render_parentOne() {
     const [num,setNum]=useState(0);
+    const [name,setName]=useState('vinoth')
     console.log("parent comp renders")
   return (
     <>
     <div>Render_parentOne</div>
     <button onClick={()=>setNum(c=>c+1)}>Click {num}</button>
-   {children}
+    <button onClick={()=>setName(c=>`${c} ${'madhavan'}`)}>Change name</button>
+    <Render_ChildOne name={name}/>
     </>
   )
 }

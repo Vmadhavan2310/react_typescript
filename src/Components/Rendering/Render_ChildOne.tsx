@@ -1,10 +1,12 @@
 import React from 'react'
-
-function Render_ChildOne() {
+interface childOnenameProps{
+    name:string
+}
+function Render_ChildOne({name}:childOnenameProps) {
     console.log("child one comp renders")
   return (
-    <div>Render_ChildOne</div>
+    <div>Render_ChildOne {name}</div>
   )
 }
 
-export default Render_ChildOne
+export default React.memo(Render_ChildOne)

@@ -34,7 +34,6 @@ import Render_useReducer from './Components/Rendering/Render_useReducer';
 import Render_stateObj from './Components/Rendering/Render_stateObj';
 import Render_parentComp from './Components/Rendering/Render_parentComp';
 import Render_parentOne from './Components/Rendering/Render_parentOne';
-import Render_ChildOne from './Components/Rendering/Render_ChildOne';
 export type rendersCount={
 
       count:number
@@ -106,9 +105,7 @@ function App() {
       {/* <Render_useReducer/> */}
       {/* <Render_stateObj/> */}
       {/* <Render_parentComp/> */}
-      <Render_parentOne>
-        <Render_ChildOne/>
-      </Render_parentOne>
+      <Render_parentOne/>
      </div>
   );
 }
