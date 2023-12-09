@@ -14,5 +14,5 @@ function Render_parentOne({children}:childOneProps) {
     </>
   )
 }
-// React comp cannot mutate the props so when passing the element as children it falls under props so the props won't re-render
+// React comp cannot mutate the props so when passing the element as children it falls under props so the props won't re-render. Incase of parent comp props changes then child also will re-render.
 export default Render_parentOne
