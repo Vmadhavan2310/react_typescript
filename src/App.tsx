@@ -34,6 +34,13 @@ import Render_useReducer from './Components/Rendering/Render_useReducer';
 import Render_stateObj from './Components/Rendering/Render_stateObj';
 import Render_parentComp from './Components/Rendering/Render_parentComp';
 import Render_parentOne from './Components/Rendering/Render_parentOne';
+// import { type RootState,type AppDispatch, store } from './Components/ReduxWithTypescript/Store';
+import { store } from './Components/ReduxWithTypescript/Store';
+import { Provider, TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import Redux_view from './Components/ReduxWithTypescript/Redux_view';
+// type DispatchFunc=()=>AppDispatch
+export const useAppDispatch:()=>typeof store.dispatch=useDispatch
+export const useAppSelector:TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector
 export type rendersCount={
 
       count:number
@@ -105,7 +112,10 @@ function App() {
       {/* <Render_useReducer/> */}
       {/* <Render_stateObj/> */}
       {/* <Render_parentComp/> */}
-      <Render_parentOne/>
+      {/* <Render_parentOne/> */}
+      <Provider store={store}>
+      <Redux_view/>
+      </Provider>
      </div>
   );
 }
