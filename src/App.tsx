@@ -38,6 +38,7 @@ import Render_parentOne from './Components/Rendering/Render_parentOne';
 import { store } from './Components/ReduxWithTypescript/Store';
 import { Provider, TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import Redux_view from './Components/ReduxWithTypescript/Redux_view';
+import UseEffect_Clean from './Components/ReduxWithTypescript/UseEffect_Clean';
 // type DispatchFunc=()=>AppDispatch
 export const useAppDispatch:()=>typeof store.dispatch=useDispatch
 export const useAppSelector:TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector
@@ -114,7 +115,7 @@ function App() {
       {/* <Render_parentComp/> */}
       {/* <Render_parentOne/> */}
       <Provider store={store}>
-      <Redux_view/>
+     <UseEffect_Clean/>
       </Provider>
      </div>
   );
