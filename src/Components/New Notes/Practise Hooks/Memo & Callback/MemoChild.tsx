@@ -3,7 +3,7 @@ type obj={
     value:number
     name:string
 }
-function MemoChild({value}:{value:number}) {
+function MemoChild({value,Inreasevalue}:{value:number; Inreasevalue:()=>void}) {
     const [count,setCount]=useState<obj>({
         value:10,
         name:'vinoth'
@@ -22,6 +22,7 @@ function MemoChild({value}:{value:number}) {
     <div>Count state {count.value} {count.name}</div>
     <button onClick={()=>setCount({...count,value:count.value + 50})}>change count</button>
     <button onClick={changeCount}>change Name</button>
+    <button onClick={Inreasevalue}>Increase value</button>
     </>
   )
 }
