@@ -39,6 +39,11 @@ import { store } from './Components/ReduxWithTypescript/Store';
 import { Provider, TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import Redux_view from './Components/ReduxWithTypescript/Redux_view';
 import UseEffect_Clean from './Components/ReduxWithTypescript/UseEffect_Clean';
+import React_ParentMemo from './Components/New Notes/Use Memo/React_ParentMemo';
+import React_deferred from './Components/New Notes/React 18/React_deferred';
+import UseDeferred from './Components/New Notes/React 18/UseDeferred';
+import Revise_Reducer from './Components/New Notes/Practise Hooks/Revise_Reducer';
+import Revise_useState from './Components/New Notes/Practise Hooks/Revise_useState';
 // type DispatchFunc=()=>AppDispatch
 export const useAppDispatch:()=>typeof store.dispatch=useDispatch
 export const useAppSelector:TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector
@@ -114,9 +119,14 @@ function App() {
       {/* <Render_stateObj/> */}
       {/* <Render_parentComp/> */}
       {/* <Render_parentOne/> */}
-      <Provider store={store}>
+      {/* <Provider store={store}>
      <UseEffect_Clean/>
-      </Provider>
+      </Provider> */}
+      {/* <React_ParentMemo/> */}
+      {/* <React_deferred/> */}
+      {/* <UseDeferred/> */}
+      {/* <Revise_Reducer/> */}
+      <Revise_useState/>
      </div>
   );
 }
