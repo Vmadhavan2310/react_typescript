@@ -46,7 +46,7 @@ function Revise_useState() {
     {showArr.map((names,index)=>{
         return <li key={index}>{names}</li>
     })}
-    <Revise_Effect/>
+    {status && <Revise_Effect/>}
     </>
 
   )

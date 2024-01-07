@@ -9,6 +9,9 @@ function Revise_Effect() {
         fetch(API)
         .then(res=>res.json())
         .then(data=>setUsers(data))
+        return()=>{
+          alert('Reivse Effect is unmounting')
+        }
     },[])
     console.log(users)
   return (

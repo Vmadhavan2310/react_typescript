@@ -44,6 +44,8 @@ import React_deferred from './Components/New Notes/React 18/React_deferred';
 import UseDeferred from './Components/New Notes/React 18/UseDeferred';
 import Revise_Reducer from './Components/New Notes/Practise Hooks/Revise_Reducer';
 import Revise_useState from './Components/New Notes/Practise Hooks/Revise_useState';
+import Context_Provider from './Components/New Notes/Practise Hooks/UseContext/Context_Provider';
+import Revise_Ref from './Components/New Notes/Practise Hooks/Revise_Ref';
 // type DispatchFunc=()=>AppDispatch
 export const useAppDispatch:()=>typeof store.dispatch=useDispatch
 export const useAppSelector:TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector
@@ -126,7 +128,9 @@ function App() {
       {/* <React_deferred/> */}
       {/* <UseDeferred/> */}
       {/* <Revise_Reducer/> */}
-      <Revise_useState/>
+      {/* <Revise_useState/> */}
+      {/* <Context_Provider/> */}
+      <Revise_Ref/>
      </div>
   );
 }
