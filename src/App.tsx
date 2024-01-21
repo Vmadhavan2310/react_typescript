@@ -47,6 +47,7 @@ import Revise_useState from './Components/New Notes/Practise Hooks/Revise_useSta
 import Context_Provider from './Components/New Notes/Practise Hooks/UseContext/Context_Provider';
 import Revise_Ref from './Components/New Notes/Practise Hooks/Revise_Ref';
 import ParentComps from './Components/New Notes/Practise Hooks/Memo & Callback/ParentComps';
+import UseTrans from './Components/React 18/UseTrans';
 // type DispatchFunc=()=>AppDispatch
 export const useAppDispatch:()=>typeof store.dispatch=useDispatch
 export const useAppSelector:TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector
@@ -132,7 +133,8 @@ function App() {
       {/* <Revise_useState/> */}
       {/* <Context_Provider/> */}
       {/* <Revise_Ref/> */}
-      <ParentComps/>
+      {/* <ParentComps/> */}
+      <UseTrans/>
      </div>
   );
 }
