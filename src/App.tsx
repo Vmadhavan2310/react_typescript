@@ -48,6 +48,9 @@ import Context_Provider from './Components/New Notes/Practise Hooks/UseContext/C
 import Revise_Ref from './Components/New Notes/Practise Hooks/Revise_Ref';
 import ParentComps from './Components/New Notes/Practise Hooks/Memo & Callback/ParentComps';
 import UseTrans from './Components/React 18/UseTrans';
+import UseId from './Components/React 18/UseId';
+import ExternalStore from './Components/React 18/ExternalStore';
+import GenericType from './Components/Generic/GenericType';
 // type DispatchFunc=()=>AppDispatch
 export const useAppDispatch:()=>typeof store.dispatch=useDispatch
 export const useAppSelector:TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector
@@ -81,6 +84,8 @@ function App() {
       age:24
     }
   ]
+  const numberArr = [1,2,3];
+  const stringArr =['vinoth','madhavan'];
   return (
     <div className="App">
     {/*  <Typingprops name='vinoths' age={25} alive={false}/>
@@ -134,7 +139,10 @@ function App() {
       {/* <Context_Provider/> */}
       {/* <Revise_Ref/> */}
       {/* <ParentComps/> */}
-      <UseTrans/>
+      {/* <UseTrans/> */}
+      {/* <UseId/> */}
+      {/* <ExternalStore/> */}
+      <GenericType personArr={personArr}/>
      </div>
   );
 }
