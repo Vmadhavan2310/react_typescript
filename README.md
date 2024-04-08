@@ -44,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## React Fiber
+Fiber is plain Javascript Object with some properties. Fiber reconciler =current React reconciler based on Fiber.
+Its complete rewrite of react fixing some long standing issues and offers incredible support for the future.
+Major focus of Fiber is Animations and responsiveness. It has the ability to split work into chunks and priortize the task. In addition to that it can pause work and come back to it later. further more it can reuse the work and abort it if not needed. 
+Note:- Fiber is asynchoronous.
+
+
