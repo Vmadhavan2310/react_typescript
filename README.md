@@ -54,5 +54,6 @@ Note:- Fiber is asynchoronous.
 ## Old Reconciler: Stack
 - Stack was synchronous
 - worked exactly like stack.
-- Had to work until the stack is empty. 
+- Had to work until the stack is empty.
+  
 Drawbacks:- Stack was synchornous and that was the problem. Eg:- If input element is there where user tends to type something but meanwhile data is fetching from backend user will face the delay in input field due to the stack cannot be interuptible. 
